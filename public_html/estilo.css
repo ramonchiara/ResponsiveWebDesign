@@ -38,3 +38,7 @@
 @media print and (orientation: landscape) {
     div { border: 1px dotted black; }
 }
+
+img {
+    max-width: 100%;
+}
