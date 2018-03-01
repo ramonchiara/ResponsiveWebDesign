@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Responsive Web Design</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style type="text/css">
+            * {
+                box-sizing: border-box; 
+                font-size: 12pt;
+                margin: 0;
+                padding: 0;
+            }
+
+            h1 { font-size: 2.0em; }
+            h2 { font-size: 1.5em; }
+
+            img {
+                max-width: 50%;
+                float: left;
+
+                border: 10px solid black;
+                padding: 20px;
+            }
+
+            .col-1 { width: 8.33%; }
+            .col-2 { width: 16.66%; }
+            .col-3 { width: 25%; }
+            .col-4 { width: 33.33%; }
+            .col-5 { width: 41.66%; }
+            .col-6 { width: 50%; }
+            .col-7 { width: 58.33%; }
+            .col-8 { width: 66.66%; }
+            .col-9 { width: 75%; }
+            .col-10 { width: 83.33%; }
+            .col-11 { width: 91.66%; }
+            .col-12 { width: 100%; }
+
+            [class*="col-"] { float: left; padding: 15px; }
+
+            @media (min-width: 576px) {
+                .col-sm-1 { width: 8.33%; }
+                .col-sm-2 { width: 16.66%; }
+                .col-sm-3 { width: 25%; }
+                .col-sm-4 { width: 33.33%; }
+                .col-sm-5 { width: 41.66%; }
+                .col-sm-6 { width: 50%; }
+                .col-sm-7 { width: 58.33%; }
+                .col-sm-8 { width: 66.66%; }
+                .col-sm-9 { width: 75%; }
+                .col-sm-10 { width: 83.33%; }
+                .col-sm-11 { width: 91.66%; }
+                .col-sm-12 { width: 100%; }
+            }
+
+            @media (min-width: 768px) {
+                .col-md-1 { width: 8.33%; }
+                .col-md-2 { width: 16.66%; }
+                .col-md-3 { width: 25%; }
+                .col-md-4 { width: 33.33%; }
+                .col-md-5 { width: 41.66%; }
+                .col-md-6 { width: 50%; }
+                .col-md-7 { width: 58.33%; }
+                .col-md-8 { width: 66.66%; }
+                .col-md-9 { width: 75%; }
+                .col-md-10 { width: 83.33%; }
+                .col-md-11 { width: 91.66%; }
+                .col-md-12 { width: 100%; }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1>Responsive Web Design - RWD</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <ul>
+                        <li><a href="../exemplo1">Redimensionamento de Conteúdo - Imagem</a></li>
+                        <li><a href="../exemplo2">Ajustando o Box Model</a></li>
+                        <li><a href="../exemplo3a">CSS Reset - Caseiro</a></li>
+                        <li><a href="../exemplo3b">CSS Reset - meyerweb reset</a></li>
+                        <li><a href="../exemplo4a">Esconder ou mostrar conteúdo - Printer</a></li>
+                        <li><a href="../exemplo4b">Esconder ou mostrar conteúdo - Tela</a></li>
+                        <li><a href="../exemplo5a">CSS Grid - Caseiro</a></li>
+                        <li><a href="../exemplo5b">CSS Grid - Bootstrap</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-md-6">
+                    <h2>CSS Grid - Caseiro</h2>
+                    <p><img src="https://picsum.photos/400/400/?random" alt="Imagem aleatória do site picum.photos"/>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-12">
+                    <div class="extra">
+                        <h2>Conteúdo Extra</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <p>Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+                        <p>Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales. Mauris a lacus. Donec mattis semper leo. In hac habitasse platea dictumst. Vivamus facilisis diam at odio. Mauris dictum, nisi eget consequat elementum, lacus ligula molestie metus, non feugiat orci magna ac sem. Donec turpis. Donec vitae metus. Morbi tristique neque eu mauris. Quisque gravida ipsum non sapien. Proin turpis lacus, scelerisque vitae, elementum at, lobortis ac, quam. Aliquam dictum eleifend risus. In hac habitasse platea dictumst. Etiam sit amet diam. Suspendisse odio. Suspendisse nunc. In semper bibendum libero.</p>
+                        <p>Proin nonummy, lacus eget pulvinar lacinia, pede felis dignissim leo, vitae tristique magna lacus sit amet eros. Nullam ornare. Praesent odio ligula, dapibus sed, tincidunt eget, dictum ac, nibh. Nam quis lacus. Nunc eleifend molestie velit. Morbi lobortis quam eu velit. Donec euismod vestibulum massa. Donec non lectus. Aliquam commodo lacus sit amet nulla. Cras dignissim elit et augue. Nullam non diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In hac habitasse platea dictumst. Aenean vestibulum. Sed lobortis elit quis lectus. Nunc sed lacus at augue bibendum dapibus.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <p>Copyright &copy; 2018 - Todos os direitos reservados</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
